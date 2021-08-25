@@ -4,16 +4,16 @@ import React from 'react';
 
 function App() {
     return (
-        <div>
-            <Button
-                variant='outlined'
-                color='secondary'
-                size='small'
-                startIcon={<AccessibilityIcon />}
-            >
-                Material UI
-            </Button>
-        </div>
+      <div>
+        <Button
+          variant="outlined"
+          color="secondary"
+          size="small"
+          startIcon={<AccessibilityIcon />}
+        >
+          Material UI
+        </Button>
+      </div>
     );
 }
 
