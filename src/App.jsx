@@ -1,20 +1,16 @@
-import { Button } from '@material-ui/core';
-import AccessibilityIcon from '@material-ui/icons/Accessibility';
-import React from 'react';
+import { makeStyles } from '@material-ui/core';
+import Navbar from './components/Navbar';
+
+const useStyles = makeStyles((theme) => ({}));
 
 function App() {
-    return (
-      <div>
-        <Button
-          variant="outlined"
-          color="secondary"
-          size="small"
-          startIcon={<AccessibilityIcon />}
-        >
-          Material UI
-        </Button>
-      </div>
-    );
+  const classes = useStyles();
+
+  return (
+    <div>
+      <Navbar />
+    </div>
+  );
 }
 
 export default App;
