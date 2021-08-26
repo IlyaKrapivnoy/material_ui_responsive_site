@@ -1,6 +1,19 @@
 import { AppBar, makeStyles, Toolbar, Typography } from '@material-ui/core';
 
-const useStyles = makeStyles((theme) => ({}));
+const useStyles = makeStyles((theme) => ({
+  logoLg: {
+    display: 'none',
+    [theme.breakpoints.up('sm')]: {
+      display: 'block',
+    },
+  },
+  logoSm: {
+    display: 'block',
+    [theme.breakpoints.up('sm')]: {
+      display: 'none',
+    },
+  },
+}));
 
 function Navbar() {
   const classes = useStyles();
@@ -8,7 +21,12 @@ function Navbar() {
   return (
     <AppBar>
       <Toolbar>
-        <Typography variant="h6">Bart Dev</Typography>
+        <Typography variant="h6" className={classes.logoLg}>
+          Bart Dev
+        </Typography>
+        <Typography variant="h6" className={classes.logoSm}>
+          BART
+        </Typography>
       </Toolbar>
     </AppBar>
   );
