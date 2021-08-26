@@ -2,6 +2,7 @@ import { Grid, makeStyles } from '@material-ui/core';
 import Sidebar from './components/Sidebar';
 import Navbar from './components/Navbar';
 import Feed from './components/Feed';
+import Add from './components/Add';
 import Rightbar from './components/Rightbar';
 
 const useStyles = makeStyles((theme) => ({
@@ -29,6 +30,7 @@ function App() {
           <Rightbar />
         </Grid>
       </Grid>
+      <Add />
     </div>
   );
 }

@@ -100,7 +100,11 @@ function Navbar() {
           <Badge badgeContent={2} color="secondary" className={classes.badge}>
             <Notifications />
           </Badge>
-          <Avatar alt="Avatar Boy" src="" />
+          <Avatar
+            alt="Avatar Boy"
+            src="https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg"
+            square
+          />
         </div>
       </Toolbar>
     </AppBar>

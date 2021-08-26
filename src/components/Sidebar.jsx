@@ -12,17 +12,18 @@ import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 
 const useStyles = makeStyles((theme) => ({
   container: {
+    position: 'fixed',
     height: '100%',
-    [theme.breakpoints.up('lg')]: {
-      height: '100vh',
-    },
+    width: '50px',
     paddingTop: theme.spacing(10),
     backgroundColor: theme.palette.primary.main,
     color: '#fff',
-    [theme.breakpoints.up('sm')]: {
+    [theme.breakpoints.up('md')]: {
       backgroundColor: '#fff',
       color: '#555',
-      borderRight: '1px solid #ece7e7',
+    },
+    [theme.breakpoints.up('sm')]: {
+      width: '66px',
     },
   },
   item: {
