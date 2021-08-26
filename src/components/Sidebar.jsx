@@ -1,5 +1,14 @@
 import { Container, makeStyles, Typography } from '@material-ui/core';
 import { Home } from '@material-ui/icons';
+import GroupAddIcon from '@material-ui/icons/GroupAdd';
+import FormatListBulletedIcon from '@material-ui/icons/FormatListBulleted';
+import LinkedCameraIcon from '@material-ui/icons/LinkedCamera';
+import DuoIcon from '@material-ui/icons/Duo';
+import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
+import CollectionsIcon from '@material-ui/icons/Collections';
+import LocalMallIcon from '@material-ui/icons/LocalMall';
+import SettingsIcon from '@material-ui/icons/Settings';
+import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -46,40 +55,40 @@ function Sidebar() {
         <Typography className={classes.text}>Homepage</Typography>
       </div>
       <div className={classes.item}>
-        <Home className={classes.icon} />
-        <Typography className={classes.text}>Homepage</Typography>
+        <GroupAddIcon className={classes.icon} />
+        <Typography className={classes.text}>Friends</Typography>
       </div>
       <div className={classes.item}>
-        <Home className={classes.icon} />
-        <Typography className={classes.text}>Homepage</Typography>
+        <FormatListBulletedIcon className={classes.icon} />
+        <Typography className={classes.text}>Lists</Typography>
       </div>
       <div className={classes.item}>
-        <Home className={classes.icon} />
-        <Typography className={classes.text}>Homepage</Typography>
+        <LinkedCameraIcon className={classes.icon} />
+        <Typography className={classes.text}>Camera</Typography>
       </div>
       <div className={classes.item}>
-        <Home className={classes.icon} />
-        <Typography className={classes.text}>Homepage</Typography>
+        <DuoIcon className={classes.icon} />
+        <Typography className={classes.text}>Videos</Typography>
       </div>
       <div className={classes.item}>
-        <Home className={classes.icon} />
-        <Typography className={classes.text}>Homepage</Typography>
+        <PhoneIphoneIcon className={classes.icon} />
+        <Typography className={classes.text}>Apps</Typography>
       </div>
       <div className={classes.item}>
-        <Home className={classes.icon} />
-        <Typography className={classes.text}>Homepage</Typography>
+        <CollectionsIcon className={classes.icon} />
+        <Typography className={classes.text}>Collections</Typography>
       </div>
       <div className={classes.item}>
-        <Home className={classes.icon} />
-        <Typography className={classes.text}>Homepage</Typography>
+        <LocalMallIcon className={classes.icon} />
+        <Typography className={classes.text}>Marketplace</Typography>
       </div>
       <div className={classes.item}>
-        <Home className={classes.icon} />
-        <Typography className={classes.text}>Homepage</Typography>
+        <SettingsIcon className={classes.icon} />
+        <Typography className={classes.text}>Settings</Typography>
       </div>
       <div className={classes.item}>
-        <Home className={classes.icon} />
-        <Typography className={classes.text}>Homepage</Typography>
+        <ExitToAppIcon className={classes.icon} />
+        <Typography className={classes.text}>Logout</Typography>
       </div>
     </Container>
   );
