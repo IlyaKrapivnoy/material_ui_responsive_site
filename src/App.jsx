@@ -1,4 +1,5 @@
 import { makeStyles } from '@material-ui/core';
+import Sidebar from './components/Sidebar';
 import Navbar from './components/Navbar';
 
 const useStyles = makeStyles((theme) => ({}));
@@ -9,6 +10,7 @@ function App() {
   return (
     <div>
       <Navbar />
+      <Sidebar />
     </div>
   );
 }
