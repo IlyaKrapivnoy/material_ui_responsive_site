@@ -19,6 +19,7 @@ const useStyles = makeStyles((theme) => ({
   },
   search: {
     display: 'flex',
+    justifyContent: 'right',
     alignItems: 'center',
     borderRadius: theme.shape.borderRadius,
     backgroundColor: alpha(theme.palette.common.white, 0.15),
@@ -29,6 +30,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('xs')]: {
       display: (props) => (props.open ? 'flex' : 'none'),
       width: '70%',
+      justifyContent: 'space-between',
     },
   },
   input: {
@@ -36,6 +38,7 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: theme.spacing(1),
   },
   cancel: {
+    marginRight: '20px',
     [theme.breakpoints.up('sm')]: {
       display: 'none',
     },
@@ -82,7 +85,7 @@ function Navbar() {
           BART
         </Typography>
         <div className={classes.search}>
-          <SearchIcon />
+          <SearchIcon style={{ marginLeft: '20px' }} />
           <InputBase placeholder="Search..." className={classes.input} />
           <Cancel className={classes.cancel} onClick={() => setOpen(false)} />
         </div>
