@@ -1,4 +1,12 @@
-import { Avatar, Container, makeStyles, Typography } from '@material-ui/core';
+import {
+  Avatar,
+  Container,
+  ImageList,
+  ImageListItem,
+  ImageListItemBar,
+  makeStyles,
+  Typography,
+} from '@material-ui/core';
 import AvatarGroup from '@material-ui/lab/AvatarGroup';
 
 const useStyles = makeStyles((theme) => ({
@@ -20,7 +28,7 @@ function Rightbar() {
       <Typography className={classes.title} gutterBottom>
         Online Friends
       </Typography>
-      <AvatarGroup max={6}>
+      <AvatarGroup max={6} style={{ marginBottom: 20 }}>
         <Avatar
           alt="Remy Sharp"
           src="https://material-ui.com/static/images/avatar/1.jpg"
@@ -47,6 +55,52 @@ function Rightbar() {
           src="https://material-ui.com/static/images/avatar/8.jpg"
         />
       </AvatarGroup>
+      <Typography className={classes.title} gutterBottom>
+        Gallery
+      </Typography>
+      <ImageList
+        rowHeight={100}
+        className={classes.imageList}
+        cols={3}
+        style={{ marginBottom: 20 }}
+      >
+        <ImageListItem>
+          <img
+            src="https://material-ui.com/static/images/image-list/hats.jpg"
+            alt=""
+          />
+        </ImageListItem>
+        <ImageListItem>
+          <img
+            src="https://material-ui.com/static/images/image-list/morning.jpg"
+            alt=""
+          />
+        </ImageListItem>
+        <ImageListItem>
+          <img
+            src="https://material-ui.com/static/images/image-list/camera.jpg"
+            alt=""
+          />
+        </ImageListItem>
+        <ImageListItem>
+          <img
+            src="https://material-ui.com/static/images/image-list/morning.jpg"
+            alt=""
+          />
+        </ImageListItem>
+        <ImageListItem>
+          <img
+            src="https://material-ui.com/static/images/image-list/camera.jpg"
+            alt=""
+          />
+        </ImageListItem>
+        <ImageListItem>
+          <img
+            src="https://material-ui.com/static/images/image-list/hats.jpg"
+            alt=""
+          />
+        </ImageListItem>
+      </ImageList>
     </Container>
   );
 }
