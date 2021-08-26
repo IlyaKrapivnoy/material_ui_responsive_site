@@ -1,4 +1,5 @@
 import {
+  alpha,
   AppBar,
   InputBase,
   makeStyles,
@@ -15,6 +16,16 @@ const useStyles = makeStyles((theme) => ({
   search: {
     display: 'flex',
     alignItems: 'center',
+    borderRadius: theme.shape.borderRadius,
+    backgroundColor: alpha(theme.palette.common.white, 0.15),
+    '&:hover': {
+      backgroundColor: alpha(theme.palette.common.white, 0.25),
+    },
+    width: '50%',
+  },
+  input: {
+    color: '#fff',
+    marginLeft: theme.spacing(1),
   },
   logoLg: {
     display: 'none',
@@ -44,7 +55,7 @@ function Navbar() {
         </Typography>
         <div className={classes.search}>
           <SearchIcon />
-          <InputBase placeholder="Search..." />
+          <InputBase placeholder="Search..." className={classes.input} />
         </div>
         icons
       </Toolbar>
