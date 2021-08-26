@@ -1,4 +1,5 @@
 import {
+  Button,
   Card,
   CardActionArea,
   CardActions,
@@ -15,13 +16,16 @@ const useStyles = makeStyles((theme) => ({
   media: {
     height: 250,
   },
+  card: {
+    marginBottom: theme.spacing(5),
+  },
 }));
 
 function Post() {
   const classes = useStyles();
 
   return (
-    <Card>
+    <Card className={classes.card}>
       <CardActionArea>
         <CardMedia
           className={classes.media}
@@ -30,14 +34,23 @@ function Post() {
           title="My post"
         ></CardMedia>
         <CardContent>
-          <Typography variant="h5">My first post</Typography>
+          <Typography gutterBottom variant="h5">
+            My first post
+          </Typography>
           <Typography variant="body">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum nulla
             voluptates maiores! Reiciendis deleniti exercitationem maxime,
             adipisci nam rerum enim.
           </Typography>
         </CardContent>
-        <CardActions></CardActions>
+        <CardActions>
+          <Button size="small" color="primary">
+            Share
+          </Button>
+          <Button size="small" color="primary">
+            Learn More
+          </Button>
+        </CardActions>
       </CardActionArea>
     </Card>
   );
