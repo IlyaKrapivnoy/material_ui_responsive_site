@@ -1,12 +1,16 @@
 import {
   alpha,
   AppBar,
+  Avatar,
+  Badge,
   InputBase,
   makeStyles,
   Toolbar,
   Typography,
 } from '@material-ui/core';
+import { Mail, Notifications } from '@material-ui/icons';
 import SearchIcon from '@material-ui/icons/Search';
+import { withThemeCreator } from '@material-ui/styles';
 
 const useStyles = makeStyles((theme) => ({
   toolbar: {
@@ -39,6 +43,14 @@ const useStyles = makeStyles((theme) => ({
       display: 'none',
     },
   },
+  icons: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  badge: {
+    marginRight: theme.spacing(3),
+  },
 }));
 
 function Navbar() {
@@ -57,7 +69,15 @@ function Navbar() {
           <SearchIcon />
           <InputBase placeholder="Search..." className={classes.input} />
         </div>
-        icons
+        <div className={classes.icons}>
+          <Badge badgeContent={4} color="secondary" className={classes.badge}>
+            <Mail />
+          </Badge>
+          <Badge badgeContent={2} color="secondary" className={classes.badge}>
+            <Notifications />
+          </Badge>
+          <Avatar alt="Avatar Boy" src="" />
+        </div>
       </Toolbar>
     </AppBar>
   );
