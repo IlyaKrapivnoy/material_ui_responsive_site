@@ -37,10 +37,12 @@ function Post() {
           <Typography gutterBottom variant="h5">
             My first post
           </Typography>
-          <Typography variant="body">
+          <Typography variant="body2">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum nulla
             voluptates maiores! Reiciendis deleniti exercitationem maxime,
-            adipisci nam rerum enim.
+            adipisci nam rerum enim. Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Cum nulla voluptates maiores! Reiciendis deleniti
+            exercitationem maxime, adipisci nam rerum enim.
           </Typography>
         </CardContent>
         <CardActions>
