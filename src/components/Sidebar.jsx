@@ -18,9 +18,12 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: theme.spacing(10),
     backgroundColor: theme.palette.primary.main,
     color: '#fff',
-    [theme.breakpoints.up('sm')]: {
+    [theme.breakpoints.up('md')]: {
       backgroundColor: '#fff',
       color: '#555',
+    },
+    [theme.breakpoints.up('sm')]: {
+      width: '66px',
     },
   },
   item: {
