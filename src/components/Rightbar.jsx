@@ -1,9 +1,11 @@
 import {
   Avatar,
   Container,
+  Divider,
   ImageList,
   ImageListItem,
   ImageListItemBar,
+  Link,
   makeStyles,
   Typography,
 } from '@material-ui/core';
@@ -12,16 +14,25 @@ import AvatarGroup from '@material-ui/lab/AvatarGroup';
 const useStyles = makeStyles((theme) => ({
   container: {
     paddingTop: theme.spacing(10),
+    position: 'sticky',
+    top: 0,
   },
   title: {
     fontSize: 16,
     fontWeight: 500,
     color: '#555',
   },
+  link: {
+    marginRight: theme.spacing(2),
+    color: '#555',
+    fontSize: 16,
+  },
 }));
 
 function Rightbar() {
   const classes = useStyles();
+
+  const preventDefault = (event) => event.preventDefault();
 
   return (
     <Container className={classes.container}>
@@ -101,6 +112,59 @@ function Rightbar() {
           />
         </ImageListItem>
       </ImageList>
+      <Typography className={classes.title} gutterBottom>
+        Categories
+      </Typography>
+      <Link
+        href="#"
+        onClick={preventDefault}
+        className={classes.link}
+        variant="body2"
+      >
+        Sport
+      </Link>
+      <Link
+        href="#"
+        onClick={preventDefault}
+        className={classes.link}
+        variant="body2"
+      >
+        Food
+      </Link>
+      <Divider flexItem style={{ marginBottom: 4 }} />
+      <Link
+        href="#"
+        onClick={preventDefault}
+        className={classes.link}
+        variant="body2"
+      >
+        Games
+      </Link>
+      <Link
+        href="#"
+        onClick={preventDefault}
+        className={classes.link}
+        variant="body2"
+      >
+        Shop
+      </Link>
+      <Divider flexItem style={{ marginBottom: 4 }} />
+      <Link
+        href="#"
+        onClick={preventDefault}
+        className={classes.link}
+        variant="body2"
+      >
+        Kids
+      </Link>
+      <Link
+        href="#"
+        onClick={preventDefault}
+        className={classes.link}
+        variant="body2"
+      >
+        Hints
+      </Link>
     </Container>
   );
 }
