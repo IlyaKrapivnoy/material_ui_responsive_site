@@ -1,6 +1,7 @@
 import {
   Card,
   CardActionArea,
+  CardActions,
   CardContent,
   CardMedia,
   makeStyles,
@@ -36,6 +37,7 @@ function Post() {
             adipisci nam rerum enim.
           </Typography>
         </CardContent>
+        <CardActions></CardActions>
       </CardActionArea>
     </Card>
   );
