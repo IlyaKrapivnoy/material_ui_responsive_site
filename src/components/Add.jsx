@@ -9,6 +9,21 @@ const useStyles = makeStyles((theme) => ({
     bottom: 20,
     right: 20,
   },
+  container: {
+    width: 500,
+    height: 550,
+    backgroundColor: '#fff',
+    position: 'absolute',
+    top: 0,
+    bottom: 0,
+    left: 0,
+    right: 0,
+    margin: 'auto',
+    [theme.breakpoints.down('sm')]: {
+      width: '100wv',
+      height: '100hv',
+    },
+  },
 }));
 
 const Add = () => {
@@ -23,7 +38,7 @@ const Add = () => {
         </Fab>
       </Tooltip>
       <Modal open={open}>
-        <Container>My modal</Container>
+        <Container className={classes.container}>My modal</Container>
       </Modal>
     </div>
   );
